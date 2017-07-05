@@ -1,0 +1,21 @@
+print'welcome'
+print'lets get started'
+spy_name=raw_input('enter your name')
+while len(spy_name)==0:
+    spy_name=raw_input('enter valid spy name:')
+spy_salution=raw_input('should I call your Mister or miss:')
+spy_age=int(raw_input('enter spy age:'))
+while spy_age<10 or spy_age>50:
+ spy_age=int(raw_input("enter the valid age"))
+print spy_age
+print type(spy_age)
+spy_rating=float(raw_input('enter spy rating:'))
+print 'welcome'+spy_salution+''+spy_name+'your age is '+str(spy_age)+'and your rating:'+str(spy_rating)+','
+if spy_rating>4.5:
+    print'you are excellent'
+elif spy_rating>3.5:
+    print'you are among of good ones'
+elif spy_rating>2.5:
+    print"you are average"
+else:
+    print'not specified'
